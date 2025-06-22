@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93721066528",
+    "project_id": "healthlog-b106b",
+    "storage_bucket": "healthlog-b106b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93721066528:android:10715f025b523c654dd045",
+        "android_client_info": {
+          "package_name": "com.denish3436.healthlog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK-8pJUOku9glHPSulXj-bqIXTrONtoBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
