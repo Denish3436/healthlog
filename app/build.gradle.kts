@@ -5,7 +5,7 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
-  id("org.sonarqube") version "6.2.0.5505"
+    id("org.sonarqube") version "6.2.0.5505"
 }
 
 android {
@@ -83,7 +83,7 @@ dependencies {
 
 sonar {
     properties {
-        property("sonar.projectKey", "denish3436_healthlog")  
+        property("sonar.projectKey", "Denish3436_healthlog")  
         property("sonar.organization", "denish3436") 
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.sources", "src/main")
