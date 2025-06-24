@@ -1,3 +1,4 @@
+// HealthLog App
 package com.denish3436.healthlog
 
 import android.os.Bundle
