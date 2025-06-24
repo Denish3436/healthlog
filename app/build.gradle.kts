@@ -5,7 +5,7 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
-    id("org.sonarqube") version "4.4.1.3373"
+  id("org.sonarqube") version "6.2.0.5505"
 }
 
 android {
