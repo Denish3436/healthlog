@@ -83,8 +83,8 @@ dependencies {
 
 sonar {
     properties {
-        property("sonar.projectKey", "denish3436_healthlog")  // CHANGE THIS
-        property("sonar.organization", "denish3436")  // CHANGE THIS
+        property("sonar.projectKey", "denish3436_healthlog")  
+        property("sonar.organization", "denish3436") 
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.sources", "src/main")
         property("sonar.tests", "src/test,src/androidTest")
