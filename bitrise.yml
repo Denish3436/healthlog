@@ -1,0 +1,42 @@
+format_version: '13'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: android
+
+trigger_map:
+- push_branch: main
+  workflow: primary
+- push_branch: develop  
+  workflow: primary
+- pull_request_source_branch: "*"
+  workflow: pull-request
+
+workflows:
+  primary:
+    steps:
+    - cache-pull@2: {}
+    - git-clone@8: {}
+    - install-missing-android-tools@3: {}
+    - android-lint@0: {}
+    - android-unit-test@1: {}
+    - gradle-runner@2:
+        inputs:
+        - gradle_task: assembleDebug
+    - deploy-to-bitrise-io@2: {}
+    - cache-push@2: {}
+
+  pull-request:
+    steps:
+    - cache-pull@2: {}
+    - git-clone@8: {}
+    - install-missing-android-tools@3: {}
+    - android-lint@0: {}
+    - android-unit-test@1: {}
+    - gradle-runner@2:
+        inputs:
+        - gradle_task: assembleDebug testDebugUnitTest
+    - deploy-to-bitrise-io@2: {}
+    - cache-push@2: {}
+
+meta:
+  bitrise.io:
+    stack: linux-docker-android-20.04
