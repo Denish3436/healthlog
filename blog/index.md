@@ -1,6 +1,6 @@
 # Implementing Modern Android Architecture: A Practical Case Study
 
-**By Denish Tomar in collaboration with mentor Yugandhar Suthari | July 13, 2025**
+**By Denish Tomar | Mentored by Yugandhar Suthari | July 13, 2025**
 
 A technical walkthrough of building an Android app with Jetpack Compose, clean architecture, and automated CI/CD pipeline.
 
