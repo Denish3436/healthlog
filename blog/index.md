@@ -48,7 +48,7 @@ The application follows Clean Architecture principles with clear separation of c
 - **Domain Layer**: HealthRepository providing data abstraction
 - **Data Layer**: HealthDao and HealthDatabase with Room persistence
 
-![Architecture Diagram](assets/app-arch.png)
+![Architecture Diagram](../assets/app-arch.png)
 
 ### **CI/CD Pipeline Architecture**
 The DevOps pipeline integrates multiple tools for automated quality assurance:
@@ -57,6 +57,8 @@ The DevOps pipeline integrates multiple tools for automated quality assurance:
 - **Code Quality**: SonarCloud analysis with quality gates
 - **Build & Deploy**: Bitrise Mobile CI/CD for Android-specific workflows
 - **Analytics**: Firebase integration for usage tracking and crash reporting
+
+![CI/CD Architecture](../assets/cicd-arch.png)
 
 ## Technical Requirements
 
@@ -77,6 +79,10 @@ The application architecture follows Clean Architecture principles with clear la
 - HomeScreen: Displays health summary and recent entries
 - AddEntryScreen: Form for new health data entry
 - HealthViewModel: Manages UI state and user interactions
+
+![App UI 2](../assets/App-UI2.png)
+
+![App UI](../assets/App-UI.png)
 
 **Domain Layer (Business Logic)**
 - HealthRepository: Abstracts data sources and provides clean API
@@ -379,6 +385,23 @@ abstract class HealthDatabase : RoomDatabase() {
 ```
 
 ## Results and Metrics
+Check each platform for results:
+
+**GitHub Actions**: View in the Actions tab  
+
+![Action Pipe](../assets/Action-Pipe.png)
+
+**SonarCloud**: Check quality gate status 
+
+![Sonar Output](../assets/Sonar-Output.png)
+
+**Bitrise**: Monitor build logs and artifacts  
+
+![Bitrise Pipeline](../assets/Bitrise-Pipe.png)
+
+**Firebase**: Verify analytics data  
+
+![Firebase Output](../assets/Firebase-Output.png)
 
 ### Pipeline Performance
 - Build time: 3-4 minutes with caching
@@ -466,3 +489,5 @@ app/src/main/java/com/denish3436/healthlog/
 This implementation demonstrates practical application of modern Android development patterns. The combination of clean architecture, Jetpack Compose, and automated DevOps creates a maintainable codebase suitable for production development.
 
 The complete source code and configuration files are available in the repository for reference and adaptation to other projects. The architecture and CI/CD diagrams provide visual representation of the system design and automation flow.
+
+**Get Started**: Fork or explore the complete implementation at [https://github.com/Denish3436/healthlog](https://github.com/Denish3436/healthlog) and start building your own production-ready Android application today!
