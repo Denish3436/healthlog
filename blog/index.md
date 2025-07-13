@@ -48,6 +48,8 @@ The application follows Clean Architecture principles with clear separation of c
 - **Domain Layer**: HealthRepository providing data abstraction
 - **Data Layer**: HealthDao and HealthDatabase with Room persistence
 
+![Architecture Diagram](assets/app-arch.png)
+
 ### **CI/CD Pipeline Architecture**
 The DevOps pipeline integrates multiple tools for automated quality assurance:
 - **Source Control**: GitHub Repository with branch protection
